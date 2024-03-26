@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/main.ts"></script>
-    <title>Kurser</title>
+    <title>TypeScript moment 1.2</title>
 </head>
 <body>
-    
+    <main>
+        <h1>Kursinfo</h1>
+        <form id="course-info">
+            <label for="course-name">Kursnamn</label>
+            <input type="text" id="course-name" name="course-name" required>
+            <label for="course-code">Kurskod</label>
+            <input type="text" id="course-code" name="course-code" required>
+            <label for="course-progression">Progression</label>
+            <select name="progression" id="course-progression" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <label for="course-url">Länk</label>
+            <input type="text" id="course-url" name="course-url" required>
+            <input type="submit" value="Lägg till" id="submit">
+        </form>
+        <div id="course-list">
+            <ul id="course-list"></ul>
+        </div>
+    </main>
 </body>
 </html>
